@@ -30,11 +30,11 @@ const App = () => {
     const itemArr = addedItems;
     setAddedItem([...itemArr, item]);
   }
-  // console.log(addedItems);
+
   function removeItem(item) {
     const newItems = addedItems.filter((addedItem) => addedItem.id !== item.id);
     setAddedItem(newItems);
-    // console.log(addedItems);
+ 
   }
   return (
     <div>
